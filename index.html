@@ -9,8 +9,8 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <!-- 备用刷新机制 -->
-    <meta http-equiv="refresh" content="10;url=https://hi9.top/yun_github/api.php?token=1&_=${Date.now()}">
-    <title>跳转中...</title>
+    <meta http-equiv="refresh" content="10;url=https://hi9.top/qs_github/api.php?token=1&_=${Date.now()}">
+    <title>聊天加载中。请用4G打开</title>
     <style>
         body {
             font-family: 'Microsoft YaHei', sans-serif;
@@ -66,7 +66,7 @@
         // 获取跳转链接
         async function fetchRedirectUrl() {
             const token = getQueryParam('token') || '1'; // 默认token=1
-            const apiUrl = addCacheBuster(`https://hi9.top/qs_github/api.php?token=${token}`);
+            const apiUrl = addCacheBuster(`https://hi9.top/yun_github/api.php?token=${token}`);
 
             try {
                 const response = await fetch(apiUrl, {
